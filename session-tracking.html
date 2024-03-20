@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Tracking</title>
+</head>
+
+<body>
+    <script>
+        // Check if sessionStorage is supported
+        if (typeof (Storage) !== "undefined") {
+            // Check if session data exists
+            if (sessionStorage.pageviews) {
+                // Increment pageviews count
+                sessionStorage.pageviews = Number(sessionStorage.pageviews) + 1;
+            } else {
+                // Initialize pageviews count
+                sessionStorage.pageviews = 1;
+            }
+
+            // Display session data
+            document.write("Pageviews: " + sessionStorage.pageviews);
+        } else {
+            // Browser doesn't support sessionStorage
+            document.write("Sorry, your browser does not support session storage.");
+        }
+    </script>
+</body>
+
+</html>

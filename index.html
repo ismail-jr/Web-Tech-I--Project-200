@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta ame="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology I</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .welcome{
+            padding-top: 120px;
+            padding-bottom: 0;
+            color: #152046;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        h1 span{
+            -webkit-text-stroke: 1px #152046;
+            color: transparent;
+            padding: 5px;
+            margin-left: -20px;
+        }
+        h1 span:hover{
+            color: #152046;
+        }
+        h1 span:has(~span:hover){
+            color: #152046;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            
+        }
+        .container{
+            padding-top: 100px;
+            padding-bottom: 50px;
+
+        }
+
+        th,td{
+            border: 1px solid #292424;
+            padding: 8px;
+            text-align: center;
+        }
+        th{
+            background: #f2f2f2;
+        }
+        .xml{
+            list-style-type: none;
+        }
+        .xml a{
+            color: #f2f2f2;
+            text-decoration: none;
+            transition: 0.4s ease;
+        }
+        .xml a:hover{
+            padding-left: 5px;
+            color: #d3c71d;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+       <a href="" class="logo">Group <span>15</span></a>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="registration.html" target="_blank">Registration</a></li>
+                <li><a href="XML/customer-datails.xml" target="_blank">XML</a></li>
+                <li><a href="frames.html" target="_blank">Fames Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h1>
+            <!-- <a href="" class="aisde-logo">Group <span> 14</span></a> -->
+        </h1>
+
+        <ul>
+            <li><a href="#list">List</a></li>
+            <!-- <li><a href="#hyperlink">Hyperlinks</a></li> -->
+            <li><a href="#timetable">Time Table</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="shoppingCart.html">Shopping Cart</a></li>
+            <li><a href="PopUps.html">Pop-Ups</a></li>
+            <li><a href="employee-login.html">Employee Login</a></li>
+            <li><a href="cookie.html">Cookie</a></li>
+            <li><a href="session-tracking.html">Session Tracking</a></li>
+        </ul>
+        <div class="xml" id="hyperlink">
+            <li><a href="XML/external-customer-details.xml">XML 1</a></li>
+            <li><a href="XML/internal-dtd-customer-details.xml">XML 2</a></li>
+            <li><a href="XML/hospital-info.xml">XML 3</a></li>
+            <li><a href="XML/person-info.xml">XML 4</a></li>
+        </div>
+    </aside>
+
+    <section>
+
+        <h1 class="welcome">
+            <span>w</span>
+            <span>e</span>
+            <span>l</span>
+            <span>c</span>
+            <span>o</span>
+            <span>m</span>
+            <span>e</span>
+            <span>&nbsp;</span>
+            <span>t</span>
+            <span>o</span>
+            <span>&nbsp;</span>
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+            <span>&nbsp;</span>
+            <span>p</span>
+            <span>r</span>
+            <span>o</span>
+            <span>j</span>
+            <span>e</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <main id="catalog">
+            <h1 style="padding-top: 40px; text-align: center;">Title Of The Product Catalog</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="image/p.jpg" alt="">
+                    <h3 style="font-size: 30px; font-weight: 800;">Product Name</h3>
+                    <p>$20.00</p>
+                    <p>Lorem ipsum dolor sitamet, consectetur adipisicing elit. Corrupti quod magam quos delectus quo ut sunt
+                        sapiente voluptates animi aliqam.</p>
+                    <button>View Details</button>
+                </div>
+                <div class="product">
+                    <img src="image/th (1).jpg" alt="">
+                    <h3 style="font-size: 30px; font-weight: 800;">Product Name</h3>
+                    <p>$20.00</p>
+                    <p>Lorem ipsum dolor sitamet, consectetur adipisicing elit. Corrupti quod magam quos delectus quo ut sunt
+                        sapiente
+                        voluptates animi aliqam.</p>
+                    <button>View Details</button>
+        
+                </div>
+                <div class="product">
+                    <img src="image/th.jpg" alt="">
+                    <h3 style="font-size: 30px; font-weight: 800;">Product Name</h3>
+                    <p>$20.00</p>
+                    <p>Lorem ipsum dolor sitamet, consectetur adipisicing elit. Corrupti quod magam quos delectus quo ut sunt
+                        sapiente voluptates animi aliqam.</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        
+        </main>
+
+
+
+
+
+       <!-- Time Table -->
+<div class="container" id="timetable">
+    <table>
+        <tr>
+            <th>DAY/TIME</th>
+            <th>I<br>6:30AM - 8:30AM</th>
+            <th>II<br>8:30AM - 10:30AM</th>
+            <th>III<br>10:30AM - 12:30PM</th>
+            <th>IV<br>12:30PM - 2:30PM</th>
+            <th>V<br>2:30AM - 4:30PM</th>
+            <th>VI<br>4:30PM - 5:30PM</th>
+        </tr>
+        <tr>
+            <th>MONDAY</th>
+            <td>Mental</td>
+            <td>Mathematics</td>
+            <td>Art</td>
+            <td rowspan="5" style="font-size: 20px; font-weight: 800;">L<br>U<br>N<br>C<br>H</td>
+            <td>Social Studies</td>
+            <td>P.E</td>
+        </tr>
+        <tr>
+            <th>MONDAY</th>
+            <td>Mental</td>
+            <td>Mathematics</td>
+            <td>Art</td>
+            <td rowspan="7" style="font-size: 20px; font-weight: 800;">L<br>U<br>N<br>C<br>H</td>
+            <td>P.E</td>
+        </tr>
+        <tr>
+            <th>TUESDAY</th>
+            <td>Science</td>
+            <td>Free Study</td>
+            <td>Art</td>
+            <td>Arabic</td>
+            <td>Art</td>
+        </tr>
+        <tr>
+            <th>WEDNESDAY</th>
+            <td>French</td>
+            <td>Music</td>
+            <td>Mathematics</td>
+            <td>English</td>
+            <td>Music</td>
+        </tr>
+        <tr>
+            <th>THURSDAY</th>
+            <td>Arabic</td>
+            <td>P.E</td>
+            <td>R.M.E</td>
+            <td>Science</td>
+            <td>R.M.E</td>
+        </tr>
+        <tr>
+            <th>FRIDAY</th>
+            <td>English</td>
+            <td>Social</td>
+            <td>Arabic</td>
+            <td>Worship</td>
+            <td>Free Study</td>
+        </tr>
+    
+    </table>
+
+</div>
+
+
+<div class="list" id="list">
+    <h1 style="text-align: center; padding: 40px 0;">List Demonstration</h1>
+    <div class="list-row">
+        <div class="col1">
+            <h2>Unordered List</h2>
+
+            <ul>
+                <li>Apple</li>
+                <li>Pineaple</li>
+                <li>Orange</li>
+                <li>Strawberry</li>
+                <li>Grapes</li>
+            </ul>
+
+        </div>
+        <div class="col2">
+            <h2>Ordered List</h2>
+            <ol>
+                <li>Blue</li>
+                <li>Red</li>
+                <li>Green</li>
+                <li>Orange</li>
+                <li>Violet</li>
+            </ol>
+        </div>
+        <div class="col3">
+            <h2>Definition List</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheet</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+                <dt>HTTP</dt>
+                <dd>HyperText Transfer Protocol</dd>
+                <dt>CD</dt>
+                <dd>Compact Disk</dd>
+            </dl>
+
+        </div>
+        <div class="col4">
+            <h2>Nested List</h2>
+            <ul>
+                <li>Programming Languages</li>
+                <ul>
+                     <ol>C++</ol>
+                     <ol>Python</ol>
+                     <ol>Java</ol>
+                     <ol>C</ol>
+                     <ol>C#</ol>
+                </ul>
+                <li>Web Technologies</li>
+                <ul>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>React JS</li>
+                </ul>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+       
+   
+
+    </section>
+
+    <footer id="hyperlinks">
+        <div class="row">
+            <div class="col-1">
+                <p>&copy;2024 Group 15 - Web Technology I Project Work | All rights reserved.</p>
+            </div>
+            <div class="col-2" id="hyperlink">
+                <a href="index.html">Go top</a>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

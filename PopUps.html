@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Ups</title>
+    <style>
+    button{
+    font-size: 16px;
+    background: #051e58;
+    color: #f7f7f7;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+    </style>
+</head>
+<body>
+    <h2 id="PopUps.html" style="padding-top: 30px; margin-left: 300px;">Pop-Ups Message</h2>
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="showConfirm()">Show Confirm</button>
+    <button onclick="showPrompt()">Show Prompt</button>
+
+</div>
+   
+
+
+
+
+
+
+<script>
+    function showAlert(){
+        alert("Welcome to Web Technology I Project: Group 15");
+    }
+
+    function showConfirm(){
+        var result = confirm("Do you want to proceed?");
+        if(result){
+            alert("Are you sure you want to proceed!");
+        }else{
+            alert("Are you sure you want to Cancel!");
+        }
+    }
+
+
+    function showPrompt(){
+        var userName = prompt("Please eneter your username:", "Jibriel Ismail");
+        if(userName !== null){
+            alert("Hello, " + userName + "!");
+        }else{
+            alert("You clicked cancel or close the prompt!");
+        }
+    }
+</script>
+</body>
+</html>

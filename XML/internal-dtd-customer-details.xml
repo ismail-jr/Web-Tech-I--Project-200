@@ -1,0 +1,37 @@
+<!DOCTYPE customer [
+<!ELEMENT customers (customer+)>
+<!ELEMENT customer (id,name,gender,phone,email,address)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+]>
+
+<customers>
+    <customer>
+    <id>1</id>
+    <name>Jibriel Ismail</name>
+    <gender>Male</gender>
+    <phone>0512345678</phone>
+    <email>someone.12@icloud.com</email>
+    <address>T Town 11</address>
+    </customer>
+    <customer>
+    <id>1</id>
+    <name>Jibriel Ismail</name>
+    <gender>Male</gender>
+    <phone>0512345678</phone>
+    <email>someone.12@icloud.com</email>
+    <address>T Town 11</address>
+    </customer>
+    <customer>
+    <id>1</id>
+    <name>Jibriel Ismail</name>
+    <gender>Male</gender>
+    <phone>0512345678</phone>
+    <email>someone.12@icloud.com</email>
+    <address>T Town 11</address>
+    </customer>
+</customers>

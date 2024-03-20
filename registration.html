@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        form{
+            max-width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 15px 220px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+        label,input{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 28px;
+            width: 50%;
+            outline: none;
+            border-radius: 5px;
+        }
+        input[type="submit"]{
+            background: #051e58;
+            width: 25%;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.2s ease-in-out;
+            margin: 20px auto;
+        }
+        .mem-log{
+            background: #051e58;
+            width: 25%;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.1s ease-in-out;
+            margin: 5px auto;
+
+        }
+        .mem-log:hover{
+            opacity: 0.9;
+        }
+        input[type="submit"]:hover{
+            opacity: 0.8;
+        }
+        input::placeholder{
+            font-size: 20px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="registration.html" style="text-align: center; padding-top:40px;">Registartion Form</h2>
+    <form action="" id="registrationForm" onsubmit="returnValidateRegistration()">
+    
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required placeholder="Username">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Email">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Password">
+
+        <label for="password">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="password" required placeholder="Confirm Password">
+
+        <input type="submit" value="Register">
+
+        <a href="login.html" class="mem-log">Already a member login</a>
+    
+    
+    </form>
+
+    <div class="Group-members" style="margin: 10% 50%;">
+        <table>
+            <tr>
+                <th>Registration Number</th>
+            </tr>
+                 <tr><td>PS/ITC/22/0012</td></tr>
+                <tr><td>PS/ITC/22/262</td></tr>
+                <tr><td>PS/ITC/22/196</td></tr>
+                <tr><td>PS/ITC/22/57</td></tr>
+                <tr><td>PS/ITC/22/162</td></tr>
+                <tr><td>PS/ITC/22/228</td></tr>
+                <tr><td>PS/ITC/22/16</td></tr>
+                <tr><td>PS/ITC/22/193</td></tr>
+                <tr><td>PS/ITC/22/254</td></tr>
+                <tr><td>PS/ITC/22/169</td></tr>
+           
+        </table>
+    </div>
+    <script>
+
+        function validateRegistration(){
+            var username = document.getElementById('username').value;
+            var username = document.getElementById('email').value;
+             var username = document.getElementById('password').value;
+
+             if(username === ""||email === "" ||password ===""){
+                alert("username,email, and password are required");
+                return false;
+             }
+
+             var  emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+             if(!emailPattern.test(email)){
+                alert("please enter a valid email address!");
+                return false;
+             }
+
+             if(password.length<6){
+                alert("password must be atleast 6 characters long");
+                return false;
+             }
+             return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie</title>
+</head>
+<body>
+    <h2 id="cookie.html">Cookie Handling</h2>
+    <button onclick="createCookie()">Create Cookie</button>
+    <button onclick="retrieveCookie()">Retrieve Cookie</button>
+    <p id="cookieStatus">Cookie Status:No Cookie Created yet</p>
+
+    <script>
+
+        var userName = "Jibril Ismail";
+        function createCookie(){
+            document.cookie = "username = John Doe; expires = Thu, 18 Dec 2022 12:00:00 UTC;path=/";
+            updateCookieStatus();
+        }
+
+        function retrieveCookie(){
+            var cookies = document.cookie;
+            var username = cookies.split(';')[0].split('='[1]);
+            alert("username retrieve from cookie:" +userName);
+        }
+        function updateCookieStatus(){
+            var cookieStatus = document.getElementById("cookieStatus");
+            cookieStatus.innerHTML = 'Cookie status: Cookie Created';
+        }
+    </script>
+</body>
+</html>

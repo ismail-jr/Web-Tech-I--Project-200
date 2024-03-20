@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+        <style>
+            form {
+                max-width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 15px 220px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+            }
+        
+            label,
+            input {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 28px;
+                width: 50%;
+                outline: none;
+                border-radius: 5px;
+            }
+        
+            input[type="submit"] {
+                background: #051e58;
+                width: 25%;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: opacity 0.2s ease-in-out;
+                margin: 20px auto;
+            }
+        
+            .mem-log {
+                background: #051e58;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: opacity 0.1s ease-in-out;
+                margin: 5px auto;
+        
+            }
+        
+            .mem-log:hover {
+                opacity: 0.9;
+            }
+        
+            input[type="submit"]:hover {
+                opacity: 0.8;
+            }
+        
+            input::placeholder {
+                font-size: 20px;
+                padding-left: 10px;
+            }
+        </style>
+</head>
+<body>
+<div id="login.html">
+    <form action="" id="loginForm" onsubmit="retturnvalidateLogin()">
+        <h2>User Login</h2>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required placeholder="username">
+
+        <label for="email" id="email" >Email</label>
+        <input type="email" id="email" name="email" required placeholder="email">
+
+        <label for="password" id="email">Password</label>
+        <input type="password" id="password" name="password" required placeholder="password">
+
+        <a href="login.html" class="mem-log">Register Here</a>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE patients SYSTEM "patients.dtd">
+<patients>
+    <patient id="1">
+        <name>
+            <first>John</first>
+            <middle>Robert</middle>
+            <last>Doe</last>
+        </name>
+        <ssn>123-45-6789</ssn>
+        <age>35</age>
+        <room>101</room>
+        <insurance>
+            <primary>
+                <company>ABC Insurance</company>
+                <member_id>ABC123</member_id>
+                <group_number>G123</group_number>
+                <address>123 Main St, City, State</address>
+            </primary>
+            <secondary>
+                <company>XYZ Insurance</company>
+                <member_id>XYZ456</member_id>
+                <group_number>X456</group_number>
+                <address>456 Oak St, City, State</address>
+            </secondary>
+        </insurance>
+        <medical_problems>Hypertension, Diabetes</medical_problems>
+        <drug_allergies>Penicillin</drug_allergies>
+    </patient>
+    <patient id="2">
+        <name>
+            <first>Ray</first>
+            <middle>Robert</middle>
+            <last>Dabe</last>
+        </name>
+        <ssn>123-46-6729</ssn>
+        <age>32</age>
+        <room>105</room>
+        <insurance>
+            <primary>
+                <company>Gavis Insurance</company>
+                <member_id>Gavi12456</member_id>
+                <group_number>G126</group_number>
+                <address>54 Main St, Bronx, New york City</address>
+            </primary>
+            <secondary>
+                <company>Lavi Insurance</company>
+                <member_id>lavi456</member_id>
+                <group_number>X468</group_number>
+                <address>456 Oak St, Harley, New york</address>
+            </secondary>
+        </insurance>
+        <medical_problems>Brain Tumor, Back ache </medical_problems>
+        <drug_allergies>Penicillin</drug_allergies>
+    </patient>
+    <patient id="3">
+        <name>
+            <first>John</first>
+            <middle>Gervin</middle>
+            <last>Maverick</last>
+        </name>
+        <ssn>223-45-6487</ssn>
+        <age>53</age> 
+        <room>11</room>
+        <insurance>
+            <primary>
+                <company>Gavis Insurance</company>
+                <member_id>Gavi123</member_id>
+                <group_number>G123</group_number>
+                <address>954 Main St, Oaklham, California</address>
+            </primary>
+            <secondary>
+                <company>Domain Insurance</company>
+                <member_id>Dom987654</member_id>
+                <group_number>D321</group_number>
+                <address>456 Oak St, Oaklham,California</address>
+            </secondary>
+        </insurance>
+        <medical_problems>Kidney Disorder, Diabetes</medical_problems>
+        <drug_allergies>Herbal Medicine</drug_allergies>
+    </patient>
+    <patient id="4">
+        <name>
+            <first>Russel</first>
+            <middle>East</middle>
+            <last>Dave</last>
+        </name>
+        <ssn>123-45-2134</ssn>
+        <age>35</age>
+        <room>201</room>
+        <insurance>
+            <primary>
+                <company>Gavis Insurance</company>
+                <member_id>Gavi09876543</member_id>
+                <group_number>G87654</group_number>
+                <address>123 Main St, Abbrai, Detroit</address>
+            </primary>
+            <secondary>
+                <company>Hame Insurance</company>
+                <member_id>Ham32456789</member_id>
+                <group_number>X89754</group_number>
+                <address>456 Oak St, Ellis, Ohio</address>
+            </secondary>
+        </insurance>
+        <medical_problems>Low blood pressure, Cholera</medical_problems>
+        <drug_allergies>Tramadol</drug_allergies>
+    </patient>
+</patients>
